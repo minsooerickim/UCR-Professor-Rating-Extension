@@ -5,7 +5,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://registrationssb.ucr.edu/StudentRegistrationSsb/ssb/classRegistration/classRegistration"
+                "<all_urls>"
             ],
             "js": [
                 "jquery-3.5.1.js", 

@@ -22,24 +22,6 @@ var body = document.getElementsByClassName('aurora-theme')[0],
         });
     });
 
-    $(function(){
-        $.ajax({
-            url: 'https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2349036/api/mycall',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            type: "GET", /* or type:"GET" or type:"PUT" */
-            dataType: "json",
-            data: {
-            },
-            success: function (result) {
-                console.log(result);
-            },
-            error: function () {
-                console.log("error");
-            }
-        });
-    });
     
 
     //chrome.runtime.onMessage.addListener(gotMessage);
