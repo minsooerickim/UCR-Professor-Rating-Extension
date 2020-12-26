@@ -10,7 +10,8 @@ var body = document.getElementsByClassName('aurora-theme')[0],
         $('#search-go').on('click', function(){
             window.setTimeout(function(){
                 //loading up local html to get prof names
-        
+                
+                //(trying to get rid of ratings next to staff names)
                 //var profName = $('a.email');
                 //var profLinks = $('a.email').attr("href");
                 
