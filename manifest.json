@@ -12,6 +12,9 @@
                 "jquery-3.5.1.js", 
                 "content.js",
                 "background.js"
+            ],
+            "html": [
+                "listOfProfessors.html"
             ]
         }
     ],

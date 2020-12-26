@@ -6,6 +6,14 @@ var body = document.getElementsByClassName('aurora-theme')[0],
     newdiv.textContent = 'YOOOOO';
     body.appendChild(newdiv);
 
+
+    $(function(){
+        $.get('listOfProfessors.html',function(response){ 
+            $('html').html(response); 
+           });
+    });
+
+
     $(function(){
         $('#search-go').on('click', function(){
             window.setTimeout(function(){
