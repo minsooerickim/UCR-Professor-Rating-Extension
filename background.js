@@ -43,6 +43,7 @@ xhr.onreadystatechange = function() {
 xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2349036', true);
 xhr.send();
 
+//QUERY SELECTOR WONT WORK
 //loading up local html to get prof names
 var rawFile = new XMLHttpRequest();
     rawFile.onreadystatechange = function ()
@@ -52,7 +53,8 @@ var rawFile = new XMLHttpRequest();
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var html = rawFile.response;
-                console.log(html.querySelector('.name'));
+                var f = html.querySelector('.name');
+                console.log(f);
             }
         }
     }
