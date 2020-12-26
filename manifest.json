@@ -10,7 +10,8 @@
             ],
             "js": [
                 "jquery-3.5.1.js", 
-                "content.js"
+                "content.js",
+                "background.js"
             ]
         }
     ],

@@ -7,35 +7,40 @@ var body = document.getElementsByClassName('aurora-theme')[0],
     body.appendChild(newdiv);
 
     $(function(){
-        $('.form-row').text('no way');
-
         $('#search-go').on('click', function(){
             window.setTimeout(function(){
-                $('a.email').append('minsoo kim');
-                $('#newid').append('testingggg append');
+                //loading up local html to get prof names
+        
+                //var profName = $('a.email');
+                //var profLinks = $('a.email').attr("href");
+                
+                //var i;
+                //for (i = 0; i < profLinks.length; i++) {
+                //    if(profLinks[i].includes('mailto')) {
+                //        $('a.email').append(' (Rating: ');
+                //    }
+                //}
+                //$('#newid').append('testingggg append');
+                //chrome.tabs.executeScript(tab.id, {file: 'background.js'}, function() {
+                //    console.log('Successfully injected script into the page');
+                //});
             }, 2000);
-
-
         });
+
+
     });
 
-    chrome.runtime.onMessage.addListener(
-        function(response, sender, sendResponse) {
-            if (response.type == 'info') {
-                var port = chrome.runtime.connectNative('com.professor.ratings')
 
-                port.postMessage(request.value)
 
-                port.onMessage.addListener(function (message){
-                    console.log(message)
-                })
+    //var port = chrome.runtime.connectNative('com.professor.ratings');
 
-                port.onDisconnect(function (error){
-                    console.log('last error:' + chrome.runtime.lastError.message)
-                })
-            }
-        }
-    );
+    //port.onMessage.addListener(function(msg){
+    //    console.log('Received' + msg);
+    //})
+    //port.onDisconnect.addListener(function(){
+    //    console.log("Disconnected");
+    //})
+
 
   
     
