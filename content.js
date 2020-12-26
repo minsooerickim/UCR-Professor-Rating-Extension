@@ -7,9 +7,6 @@ var body = document.getElementsByClassName('aurora-theme')[0],
     body.appendChild(newdiv);
 
     $(function(){
-        //var instructors = $("td [data-property='instructor']");
-        //console.log(instructors);
-
         $('.form-row').text('no way');
 
         $('#search-go').on('click', function(){
@@ -22,17 +19,23 @@ var body = document.getElementsByClassName('aurora-theme')[0],
         });
     });
 
-    
+    chrome.runtime.onMessage.addListener(
+        function(response, sender, sendResponse) {
+            if (response.type == 'info') {
+                var port = chrome.runtime.connectNative('com.professor.ratings')
 
-    //chrome.runtime.onMessage.addListener(gotMessage);
-    
-    //function gotMessage(message, sender, sendResponse){
-    //    console.log(message.txt);
-    //    $(function(){
-    //        $('.email').text('the real no way');
-    //    });
-    //}
+                port.postMessage(request.value)
 
+                port.onMessage.addListener(function (message){
+                    console.log(message)
+                })
+
+                port.onDisconnect(function (error){
+                    console.log('last error:' + chrome.runtime.lastError.message)
+                })
+            }
+        }
+    );
 
   
     

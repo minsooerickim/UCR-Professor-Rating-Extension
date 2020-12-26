@@ -1,0 +1,9 @@
+{
+    "name": "com.professor.ratings",
+    "description": "ucr professor ratings",
+    "path": "C:\\Users\\futur\\Documents\\Github\\Professor-Ratings-Real",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://ojobiefiiccikjfnecbfdpagkbfoinhc/"
+    ]
+}

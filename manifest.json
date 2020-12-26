@@ -5,7 +5,8 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "https://registrationssb.ucr.edu/*",
+                "http://registrationssb.ucr.edu/*"
             ],
             "js": [
                 "jquery-3.5.1.js", 
@@ -18,5 +19,8 @@
     },
     "browser_action": {
         "default_icon": "rating.png"
-    }
+    },
+    "permissions": [
+        "nativeMessaging"
+    ]
 }
