@@ -46,10 +46,10 @@ var math = new XMLHttpRequest();
 math.onreadystatechange = function() {
     if (math.readyState == 4) {
         if (math.status == 200) {
-            //console.log(xhr.responseText);
-            //console.log(document.getElementsByClassName('RatingValue__Numerator-qw8sqy-2.liyUjw'));
+            console.log(xhr.responseText);
+            console.log(document.getElementsByClassName('RatingValue__Numerator-qw8sqy-2.liyUjw'));
             console.log("succesfully connected to ratemyprofessors.com");
-            //results = document.getElementsByClassName('NameTitle__Name-dowf0z-0');
+            results = document.getElementsByClassName('NameTitle__Name-dowf0z-0');
             
             var mathHtml = document.createElement('div');
             mathHtml.innerHTML = math.responseText;

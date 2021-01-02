@@ -20,16 +20,16 @@ var body = document.getElementsByClassName('aurora-theme')[0],
                 //loading up local html to get prof names
                 
                 //(trying to get rid of ratings next to staff names)
-                //var profName = $('a.email');
-                //var profLinks = $('a.email').attr("href");
+                var profName = $('a.email');
+                var profLinks = $('a.email').attr("href");
                 
-                //var i;
-                //for (i = 0; i < profLinks.length; i++) {
-                //    if(profLinks[i].includes('mailto')) {
-                //        $('a.email').append(' (Rating: ');
-                //    }
-                //}
-                //$('#newid').append('testingggg append');
+                var i;
+                for (i = 0; i < profLinks.length; i++) {
+                    if(profLinks[i].includes('mailto')) {
+                        $('a.email').append(' Minsoo Kim ');
+                    }
+                }
+                $('#newid').append('testingggg append');
                 //chrome.tabs.executeScript(tab.id, {file: 'background.js'}, function() {
                 //    console.log('Successfully injected script into the page');
                 //});
