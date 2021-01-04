@@ -1,13 +1,3 @@
-console.log("background script baby!");
-
-//chrome.browserAction.onClicked.addListener(buttonClicked);
-
-//function buttonClicked(tab){
-//    let msg = {
-//        txt: "execute"
-//    }
-//    chrome.tabs.sendMessage(tab.id, msg);
-//}
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
