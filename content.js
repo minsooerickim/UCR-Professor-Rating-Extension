@@ -1,8 +1,6 @@
-console.log("Testing!!!!");
-
 var body = document.getElementsByClassName('aurora-theme')[0],
-    newdiv = document.createElement('p');   //create a div
-    newdiv.id = 'newid';                      //add an id
+    newdiv = document.createElement('p');   
+    newdiv.id = 'newid';                 
     newdiv.textContent = 'YOOOOO';
     body.appendChild(newdiv);
 
