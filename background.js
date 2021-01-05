@@ -28,6 +28,7 @@ xhr.onreadystatechange = function() {
         }
     }
 };
+//using a cors anywhere herokuapp proxy to send requests cuz chrome sucks
 xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2349036', true);
 xhr.send();
 
