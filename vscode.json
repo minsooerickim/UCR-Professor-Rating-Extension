@@ -1,3 +1,4 @@
+//attempt at chrome native messaging
 {
     "name": "com.professor.ratings",
     "description": "ucr professor ratings",
