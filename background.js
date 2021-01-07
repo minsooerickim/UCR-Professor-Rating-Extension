@@ -23,6 +23,7 @@ xhr.onreadystatechange = function() {
             });
             
         }
+        //when the webpage doesnt load
         if (xhr.status == 404) {
             console.log('Resource not found');
         }
