@@ -1,6 +1,7 @@
 var body = document.getElementsByClassName('aurora-theme')[0],
     newdiv = document.createElement('p');   
     newdiv.id = 'newid';                 
+    //testing appending to registration site
     newdiv.textContent = 'YOOOOO';
     body.appendChild(newdiv);
 
