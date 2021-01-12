@@ -5,7 +5,7 @@ var body = document.getElementsByClassName('aurora-theme')[0],
     newdiv.textContent = 'YOOOOO';
     body.appendChild(newdiv);
 
-
+    //jQuery to get elements and append
     $(function(){
         $.get('listOfProfessors.html',function(response){ 
             $('html').html(response); 
